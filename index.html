@@ -23,34 +23,93 @@ h1 {
 	font-size: 18px;
 	}
 img {
-	width: 150px;
+	width: 300px;
 	border-radius: 70%;
 	border: 3px solid green;
 	margin-top: 8px;
 	}
+	.table-style1 {
+		width: 80%;
+		margin: 20px auto;
+		border: 2px solid navy;
+		}
+	.table-style1 th, .table-style1 td {
+		border: 1px solid navy;
+		padding: 10px;
+		text-align: center;
+		}
+	.table-style1 th {
+		background-color: lightblue;
+		}
+	.table-style2 {
+		width: 60%;
+		margin: 20px auto;
+		border-collapse: collapse;
+		border: 2px solid darkgreen;
+		}
+	.table-style2 th, .table-style2 td {
+		border: 1px solid darkgreen;
+		padding: 10px;
+		text-align: center;
+		}
+	.table-style2 th {
+		background-color: lightgreen;
+		}
+	.about {
+		width: 60%;
+		margin: 20px auto;
+		text-align: left;
+		}
+	div.mycontainer {
+		width:66%;
+		overflow:auto;
+		}
+		div.mycontainer div {
+			width:50%;
+			float:left;
+		}
+	.video {
+		width: 31%;
+		margin: 10px auto;
+		text-align: center;
+		border: 3px solid green;
+		}
+	.list-style1 {
+		list-style-type: square;
+		color: darkblue;
+		text-align: left;
+		margin: 20px;
+		}
+	.list-style2 {
+		list-style-type: circle;
+		color: darkgreen;
+		text-align: left;
+		margin: 20px;
+		}
 	</style>
 	</head>
 <body>
 <header>
   <h1>Welcome to My Personal Webpage</h1>
-  <p>This is a paragraph</p>
+  <p>This is an example</p>
 	<pre>
 	Name: That One Guy
 	Age: Thats for me to know and you to find out!
 	Location: Kansas City
 	</pre>
 </header>
-<section>
+<section class="about">
 	<p>Check out my favorite website:
 	<a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a>
 	</p>
 	<a href="mailto:roni2pointoh@gmail.com" target="_blank">roni2pointoh@gmail.com</a>
  	<a href="https://www.google.com/" target="_blank">
-	<img src="https://github.com/roni2pointoh-max/My-First-Webpage/blob/main/My%20Picture.jpg?raw=true" alt="Sample Image"></a>
+	<img src="https://github.com/roni2pointoh-max/My-First-Webpage/blob/main/My%20Picture.jpg?raw=true" alt="Sample Image" title="That One Guy">
+	</a>
 </section>
 	<hr>
 	<h2>My Hobbies</h2>
-	<table>
+	<table class="table-style1">
 	<tr>
 	<th>Hobby</th>
 	<th>Hours/Week</th>
@@ -65,7 +124,7 @@ img {
 	</tr>
 	</table>
 	<h2>My Favorite Movies</h2>
-	<table>
+	<table class="table-style2">
 	<tr>
 	<th>Movie</th>
 	<th>Year</th>
@@ -78,21 +137,27 @@ img {
 	<td>2006</td>
 	</tr>
 	</table>
+	<div class="mycontainer">
+	<div>
 	<h2>My Favorite Foods</h2>
-	<ul>
+	<ul class="list-style1">
 	<li>Pizza</li>
 	<li>Nachos</li>
 	<li>Cheeseburgers</li>
 	</ul>
+	</div>
+	<div>
 	<h2>My Favorite Drinks</h2>
-	<ul>
+	<ul class="list-style2">
 	<li>Dr. Peppeer</li>
 	<li>Pepsi</li>
 	<li>Coke</li>
 	</ul>
-<section>
+	</div>
+	</div>
+<section class="video">
 	<h2>My Favorite Video</h2>
-	<video width="480" height="360" controls>
+	<video width="385" height="250" controls>
 	<source src="https://github.com/roni2pointoh-max/My-First-Webpage/blob/main/Cats%20Video.mp4?raw=True">
 	Your browser doesn't support the video tag.
 	</video>
