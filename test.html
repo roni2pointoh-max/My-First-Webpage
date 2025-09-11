@@ -2,6 +2,32 @@
 <html>
 <head>
 <style>
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	background-color: #f8f8f8;
+	padding: 10px
+	}
+.grid-item {
+	background-color: #4CAF50;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	}
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	background-color: lightgray;
+	padding: 20px;
+	}
+.flex-item {
+	background-color: steelblue;
+	color: white;
+	padding: 20px;
+	width: 30%
+	text-align: center;
+	}
 body {
   background-image: linear-gradient(to bottom, cornflowerblue 0%,
 cornsilk 25%, lightcyan 50%, silver 75%, white 100%);
@@ -22,6 +48,20 @@ cornsilk 25%, lightcyan 50%, silver 75%, white 100%);
 <br>
 <input type="submit" value="Submit">
 </form>
+<form>
+	<label for="user">Username:</label>
+	<input type="text" id="user" name="user" placeholder="Enter your username" required>
+	<br><br>
+	<label for="pass">Password:</label>
+	<input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+	<br><br>
+	<input type="submit" value="Login">
+	</form>
 <p>This is a new page.</p>
+<div class="flex-container">
+	<div class="flex-item"><a href="https://www.linkinpark.com/" target="_blank">Linkin Park</a></div>
+	<div class="flex-item"><a href="https://www.breakingbenjamin.com/" target="_blank">Breaking Benjamin</a></div>
+	<div class="flex-item"><a href="https://www.psycopathicrecords.com/" target="_blank">Psycopathic Records</div>
+</div>
 </body>
 </html>
